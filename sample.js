@@ -27,7 +27,7 @@ function display() {
         result_arr.concat(main_arr);
     }
 
-    document.getElementById("answer") = result_arr;
-    document.getElementById("number") = original
+    document.getElementById("answer").textContent = result_arr;
+    document.getElementById("number").textContent = original
 
 }
