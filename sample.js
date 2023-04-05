@@ -16,23 +16,26 @@ function display() {
 
 
     if(fruit.checked){
-        result_arr.concat(fruit_arr);
+        // result_arr.concat(fruit_arr);
+        var result_arr = ["果物"];
     }
 
     if(drink.checked){
-        result_arr.concat(drink_arr);
+        // result_arr.concat(drink_arr);
+        var result_arr = ["飲み物"];
     }
 
     if(main.checked){
-        result_arr.concat(main_arr);
+        // result_arr.concat(main_arr);
+        var result_arr = ["飯"];
     }
 
     // document.getElementById("answer").textContent = result_arr;
     for (var i = 0; i<result_arr.length; i++){
-        var disp_list = document.createElement('li');
+        var disp_list = document.createElement("li");
         disp_list.textContent = result_arr[i];
         document.getElementById("answer").appendChild(disp_list);
     }
-    document.getElementById("number").textContent = original
+    document.getElementById("number").textContent = result_arr.length
 
 }
