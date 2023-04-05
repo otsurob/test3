@@ -27,7 +27,12 @@ function display() {
         result_arr.concat(main_arr);
     }
 
-    document.getElementById("answer").textContent = result_arr;
+    // document.getElementById("answer").textContent = result_arr;
+    for (var i = 0; i<result_arr.length; i++){
+        var disp_list = document.createElement('li');
+        disp_list.textContent = result_arr[i];
+        document.getElementById("answer").appendChild(disp_list);
+    }
     document.getElementById("number").textContent = original
 
 }
