@@ -16,18 +16,18 @@ function display() {
 
 
     if(fruit.checked){
-        // result_arr.concat(fruit_arr);
-        var result_arr = fruit_arr;
+        result_arr = result_arr.concat(fruit_arr);
+        // var result_arr = fruit_arr;
     }
 
     if(drink.checked){
-        // result_arr.concat(drink_arr);
-        var result_arr = drink_arr;
+        result_arr = result_arr.concat(drink_arr);
+        // var result_arr = drink_arr;
     }
 
     if(main.checked){
-        // result_arr.concat(main_arr);
-        var result_arr = main_arr;
+        result_arr = result_arr.concat(main_arr);
+        // var result_arr = main_arr;
     }
 
     // document.getElementById("answer").textContent = result_arr;
